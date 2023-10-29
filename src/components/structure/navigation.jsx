@@ -5,6 +5,7 @@ import { Login } from "../pages/Login"
 import { Private } from "../pages/Private"
 import { Register } from "../pages/Register"
 import { ListUsersComponent } from '../pages/ListUsersComponent'
+import { UserBoard } from "../pages/UserBoard"
 
 export const nav = [
      { path:     "/",         name: "Home",        element: <Home />,       isMenu: true,     isPrivate: false  },
@@ -13,5 +14,7 @@ export const nav = [
      { path:     "/private",  name: "Private",     element: <Private />,    isMenu: true,     isPrivate: true  },
      { path:     "/account",  name: "Account",     element: <Account />,    isMenu: true,     isPrivate: true  },
      { path:     "/register", name: "Register",    element: <Register />,   isMenu: false,    isPrivate: false },
-     { path:     "/userlist", name: "UsersList",    element: <ListUsersComponent />,   isMenu: true,    isPrivate: true },
+     { path:     "/userlist", name: "User",    element: <ListUsersComponent />,   isMenu: false,    isPrivate: true },
+     { path:     "/edit-user/:id", name: "Register",    element: <Register />,   isMenu: false,    isPrivate: false },
+     { path:     "/user-board", name: "User-Board",    element: <UserBoard />,   isMenu: true,    isPrivate: true },
 ]

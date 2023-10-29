@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 export const Account = () => {
 
       const { user } = AuthData();
-      const [result, setResult] = useState([]);      
+      const [result, setResult] = useState([]);         
 
       useEffect(() => {
           const getMessage = () => {
@@ -14,8 +14,8 @@ export const Account = () => {
                "/api/v1/auth/message",                      
                {}).then(
                (response) => {       
-                    let arr = response.data;              
-                    setResult([...result, response.data]);                    
+                    //userArr = response.data;              
+                    setResult(response.data);                    
                     // console.log("From Use Effect in response block --");
                     // console.log(arr);
                }).catch(
@@ -35,10 +35,10 @@ export const Account = () => {
       }, []);
 
       //debugger
-      useEffect(() => {
-          // console.log("From Use Effect --");
-          // console.log(result);
-        }, [result]);
+     //  useEffect(() => {
+     //      // console.log("From Use Effect --");
+     //      // console.log(result);
+     //  }, [result]);
 
 
      return (
