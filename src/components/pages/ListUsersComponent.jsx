@@ -21,8 +21,7 @@ export const ListUsersComponent = () => {
 
      const deleteUserById = (userId) => {
         deleteUser(userId);
-        navigate('/userlist');
-        
+        navigate('/userlist');       
      };
 
     return (
