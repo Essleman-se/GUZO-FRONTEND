@@ -13,7 +13,8 @@ export const setAuthHeader = (token) => {
      window.localStorage.setItem('auth_token', token);
 };
 
-axios.defaults.baseURL = 'http://localhost:7071';
+//axios.defaults.baseURL = 'http://localhost:7071';
+axios.defaults.baseURL = '172.21.176.1:7071';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 export const request = (method, url, data) => {
