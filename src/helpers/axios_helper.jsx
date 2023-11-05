@@ -26,6 +26,7 @@ export const request = (method, url, data) => {
 
     return axios({
         method: method,
+        mode: 'same-origin',
         url: url,
         headers: headers,
         data: data

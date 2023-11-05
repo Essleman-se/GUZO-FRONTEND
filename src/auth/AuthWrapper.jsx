@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react"
 import { RenderHeader } from "../components/structure/Header";
 import { RenderMenu, RenderRoutes } from "../components/structure/RenderNavigation";
 import { request, setAuthHeader } from '../helpers/axios_helper';
-import { FindUserService } from '../service/UserService.jsx';
+
 
 
 const AuthContext = createContext();
