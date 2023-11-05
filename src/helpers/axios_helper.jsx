@@ -13,15 +13,15 @@ export const setAuthHeader = (token) => {
      window.localStorage.setItem('auth_token', token);
 };
 
-axios.defaults.baseURL = 'http://localhost:7071';
-//axios.defaults.baseURL = 'http://172.21.176.1:7071';
+//axios.defaults.baseURL = 'http://localhost:7071';
+axios.defaults.baseURL = 'http://ec2-3-133-135-2.us-east-2.compute.amazonaws.com';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 export const request = (method, url, data) => {
 
     let headers = {};
     if (getAuthToken() !== null && getAuthToken() !== "null") {        
-        headers = {'Authorization': `Bearer ${getAuthToken()}`, "Access-Control-Allow-Origin": "*" };
+        headers = {'Authorization': `Bearer ${getAuthToken()}`};
     }
 
     return axios({
