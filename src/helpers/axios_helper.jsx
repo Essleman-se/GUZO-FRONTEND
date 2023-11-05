@@ -21,12 +21,11 @@ export const request = (method, url, data) => {
 
     let headers = {};
     if (getAuthToken() !== null && getAuthToken() !== "null") {        
-        headers = {'Authorization': `Bearer ${getAuthToken()}`};
+        headers = {'Authorization': `Bearer ${getAuthToken()}`, "Access-Control-Allow-Origin": "*" };
     }
 
     return axios({
-        method: method,
-        mode: 'same-origin',
+        method: method,       
         url: url,
         headers: headers,
         data: data
