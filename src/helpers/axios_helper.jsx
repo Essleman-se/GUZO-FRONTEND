@@ -14,7 +14,7 @@ export const setAuthHeader = (token) => {
 };
 
 //axios.defaults.baseURL = 'http://localhost:7071';
-axios.defaults.baseURL = 'http://ec2-3-133-135-2.us-east-2.compute.amazonaws.com';
+axios.defaults.baseURL = 'http://ec2-3-128-206-245.us-east-2.compute.amazonaws.com:7071';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
 export const request = (method, url, data) => {
