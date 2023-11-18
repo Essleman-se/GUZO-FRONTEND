@@ -1,8 +1,8 @@
 import { createContext, useContext, useState } from "react"
 import { RenderHeader } from "../components/structure/Header";
-import { RenderMenu, RenderRoutes } from "../components/structure/RenderNavigation";
+import { RenderMenu, RenderRoutes } from "../components/structure/RenderNavigation/RenderNavigation";
 import { request, setAuthHeader } from '../helpers/axios_helper';
-
+import {Main } from "../components/Main/Main"
 
 
 const AuthContext = createContext();
@@ -44,9 +44,9 @@ export const AuthWrapper = () => {
      }
      return (            
                <AuthContext.Provider value={{user, login, logout}}>
-                    <>
-                         <RenderHeader />
+                    <>                        
                          <RenderMenu />
+                         <Main />
                          <RenderRoutes />                        
                     </>                    
                </AuthContext.Provider>               

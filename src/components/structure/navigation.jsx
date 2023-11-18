@@ -1,11 +1,12 @@
 import { About } from "../pages/About"
 import { Account } from "../pages/Account"
-import { Home } from "../pages/Home"
+import { Home } from "../Home/Home"
 import { Login } from "../pages/Login"
 import { Private } from "../pages/Private"
 import { Register } from "../pages/Register"
 import { ListUsersComponent } from '../pages/ListUsersComponent'
 import { UserBoard } from "../pages/UserBoard"
+import { Main } from "../Main/Main"
 
 export const nav = [
      { path:     "/",         name: "Home",        element: <Home />,       isMenu: true,     isPrivate: false  },
@@ -17,4 +18,5 @@ export const nav = [
      { path:     "/userlist", name: "User",    element: <ListUsersComponent />,   isMenu: false,    isPrivate: true },
      { path:     "/edit-user/:id", name: "Register",    element: <Register />,   isMenu: false,    isPrivate: false },
      { path:     "/user-board", name: "User-Board",    element: <UserBoard />,   isMenu: true,    isPrivate: true },
+     { path:     "/main", name: "Main",    element: <Main />,   isMenu: true,    isPrivate: false },
 ]
