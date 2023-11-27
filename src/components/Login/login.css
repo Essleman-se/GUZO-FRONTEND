@@ -1,0 +1,137 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(240, 4%, 36%);
+    --whiteColorDeam: hsl(0, 0%, 93%);
+    --greyText: rgb(190, 190, 190);
+    --inputColor: rgb(239, 239, 239);
+    --bodyColor: rgb(240, 240, 246);
+    --cardBG: rgb(225, 225, 235);
+  }
+  .page{
+    width: 150%;
+    height: 450px;
+    padding-top: 8rem;
+    padding-left: 10rem;    
+    background-color: white;
+    display: flex;   
+    box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.15); 
+  }
+  .div-bg{
+    background-image: url("../../assets/img (8).jpg");
+    background-size: cover;
+    background-position-y: 80%;
+    width: 150px;
+    height: 120px;    
+  }
+  .inputs {
+    width: 230px;
+    height: 120px;
+    padding-top: 0rem;
+    align-items: center;
+    background-color: beige;      
+  }
+  .input-group {
+    margin-top: -30px;
+  }
+  .icon-group {
+    margin-left: -10px;
+    align-items: center;    
+  }
+  .input {
+    display: flex;
+    align-items: center;
+    width: 13rem;
+    padding: 5px 15px;
+    height: 30px;
+    border-radius: 5px;
+    transition: 200ms box-shadow ease-in-out;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 5px 0.5rem; 
+    background-color: var(--whiteColor);  
+  }
+  .icon {
+    font-size: 13px;
+    color: var(--PrimaryColor);           
+  }
+  input {
+    outline: none;
+    border: none;    
+    width: 100%;
+    font-size: 13px;    
+  }
+  .button {    
+    width: 90%;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    background-color: rgb(56, 56, 56);
+    color: white;
+    font-family: "Poppins";
+    margin: 10px 10px;
+    height: 25px;
+    transition: 200ms background-color ease-in-out;
+    display: flex;
+  }
+  button {
+    background-color: rgb(56, 56, 56);
+    border: none; 
+    margin-left: 4.5rem; 
+    padding-top: -1rem;      
+    color: var(--whiteColor);  
+  }
+  @media screen and (min-width: 500px) {
+    .page {
+      width: auto;
+      height: 20rem;
+      padding: 8rem 2rem 1rem;
+      justify-content: center;
+  }
+}
+
+ @media screen and (max-width: 500px) {
+  .page {
+    width: auto;
+    height: 20rem;
+    padding: 8rem 2rem 0rem;
+    justify-content: center;
+  }
+  .inputs {
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
+} 
+@media screen and (min-width: 840px) {
+  .page {
+    width: 53rem;
+    height: 20rem;
+    padding: 9rem 0rem 1rem;
+    margin-left: 1rem;    
+    justify-content: center;
+  }
+  .inputs {
+    padding-top: 2rem;
+    padding-left: 0rem;
+  }
+}
+@media screen and (min-width: 940px) {
+  .page {
+    width: 58rem;
+    height: 20rem;
+    padding: 9rem 0rem 1rem;
+    margin-left: 2rem; 
+  }
+}
+@media screen and (min-width: 1024px) {
+  .page {
+    width: auto;
+    height: 20rem;
+    padding: 8rem 0rem 1rem;
+    margin-left: 7rem; 
+    margin-right: 7rem;
+  }
+}

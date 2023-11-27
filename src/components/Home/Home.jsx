@@ -8,6 +8,7 @@ import {SiTripadvisor} from 'react-icons/si'
 import {BsListTask} from 'react-icons/bs'
 import {TbApps} from 'react-icons/tb'
 
+
 export const Home = () => {
 
     return (

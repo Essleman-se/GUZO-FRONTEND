@@ -20,55 +20,99 @@
     --bodyColor: rgb(240, 240, 246);
     --cardBG: rgb(225, 225, 235);
 }
+
 a{
-  text-decoration: none;
-}
-li{
-  list-style: none;
-}
-.section{
-  padding: 4rem 0 2rem;
-}
-.container{
-   padding-left: 1.5rem;
-   padding-right: 1.5rem;
-}
-.icon{
-  font-size: 2rem;
-  cursor: pointer;
-}
-.flex{
-  display: flex;
-  align-items: center;
-}
-.grid{
-  display: grid;
-  align-items: center;
-}
-.btn{
-  padding: .6rem 1.5rem;
-  background: var(--gradientColor);
-  border-radius: 3rem;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  width: 8rem;
-}
-.btn a{
-  color: var(--whiteColor);
-  font-weight: 500;
-}
-.btn.hover{
-  background: var(--SecondaryColor);
-}
-img, video{
-  width: 100%;
-  height: auto;
-}
-input{
-  font-size: 100%;
-}
-body{
-  background: var(--bodyColor);
+    text-decoration: none;
 }
 
+li{
+    list-style: none;
+}
+
+.section{
+    padding: 4rem 0 2rem;
+ }
+
+.container{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.icon{
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+    align-items: center;
+}
+
+.btn{
+    padding: .6rem 1.5rem;
+    background: var(--gradientColor);
+    border: none;
+    outline: none;
+    border-radius: 3rem;
+    cursor: pointer;
+}
+
+.btn a{
+ color: var(--whiteColor);
+ font-weight: 500;
+}
+
+.btn:hover{
+    background: var(--SecondaryColor);
+}
+
+
+img, video{
+width: 100%;
+height: auto;
+}
+
+input{
+    font-size: 100%;
+}
+
+body{
+    background: var(--bodyColor);
+}
+
+::selection{
+    background: var(--PrimaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    background: var(--whiteColorDeam);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--SecondaryColor);
+    border-radius: 10px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container{
+        width: 80% !important;
+        margin: auto !important;
+    }
+
+    .section{
+        padding: 6rem 0 4rem;
+     }
+}
+
+@media screen and (min-width: 2560px){
+    body{
+        zoom: 1.7;
+    }
+}

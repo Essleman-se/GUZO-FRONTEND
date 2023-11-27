@@ -15,10 +15,7 @@ export const Login = () => {
 
           try {
                
-               await login(formData.userName, formData.password) 
-               // console.log("password and email from login");
-               // console.log(formData.userName);
-               // console.log(formData.password);
+               await login(formData.userName, formData.password)  
                navigate("/account")
 
           } catch (error) {

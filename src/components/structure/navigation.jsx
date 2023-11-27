@@ -1,7 +1,7 @@
 import { About } from "../pages/About"
 import { Account } from "../pages/Account"
 import { Home } from "../Home/Home"
-import { Login } from "../pages/Login"
+import { Login } from "../Login/Login"
 import { Private } from "../pages/Private"
 import { Register } from "../pages/Register"
 import { ListUsersComponent } from '../pages/ListUsersComponent'
