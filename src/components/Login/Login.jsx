@@ -26,6 +26,15 @@ export const Login = () => {
           }
           
      }
+     const [focused, setFocused] = useState(false);
+     const handleFocus = (e) => {
+        setFocused(true);        
+        console.log(e.target.value);
+     };
+     const handleBlur = (e) => {
+          setFocused(false);
+          e.target.style.boxShadow = "";
+     };
 
      return (
           <div className="page">
@@ -36,15 +45,26 @@ export const Login = () => {
                          <div className="icon-group">                        
                            <FaUser className="icon"/>   
                          </div>                       
-                         <input placeholder="Username" onfocus="addBoxShadow('username')" onblur="removeBoxShadow('username')" 
-                               value={formData.userName} onChange={(e) => setFormData({userName: e.target.value}) } type="text"/>
+                         <input 
+                                placeholder="Username" onFocus={handleFocus} onBlur={handleBlur} 
+                                value={formData.userName} onChange={(e) => setFormData({userName: e.target.value}) } 
+                                type="text"
+                                className={focused ? 'focused-user' : ''}
+                                />
                     </div>
                     <div className="input">
                          <div className="icon-group">
                           <FaLock className="icon"/>
                          </div> 
-                         <input placeholder="Password" onfocus="addBoxShadow('password')" onblur="removeBoxShadow('password')"
-                                   value={formData.password} onChange={(e) => setFormData({password: e.target.value}) } type="password"/>
+                         <input placeholder="Password" onFocus={handleFocus} 
+                                onBlur={handleBlur}
+                                value={formData.password} onChange={(e) => setFormData({password: e.target.value}) } 
+                                type="password"
+                                className={focused ? 'focused-pass' : ''}
+                                />
+                    </div>
+                    <div className="forgot-password">
+                       <small>Forgot Password?</small>
                     </div>
                     <div className="button">
                          <button onClick={doLogin}>Log in</button>
@@ -52,6 +72,12 @@ export const Login = () => {
                     {errorMessage ?
                     <div className="error">{errorMessage}</div>
                     : null }
+                    <div className="register-text">
+                      <small>
+                         Don't have an account?
+                         <span>Register</span>
+                      </small>
+                    </div>
                 </div>
                </div>            
           </div>
