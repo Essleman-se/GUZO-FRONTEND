@@ -109,6 +109,13 @@
     .header {
         padding: 1.5rem 2rem;
     }
+    .header .menu {
+        position: absolute;
+        margin-left: 200px;
+    }
+    .header .logoDiv {              
+        margin-left: -3px;      
+    }
     .header .menu .menuList {
         display: flex;
         align-items: center;
@@ -125,7 +132,7 @@
         color: var(--PrimaryColor);
     }
     .header .menu .menuList .menuItem .menuLink .headerNumber {
-        color: var(--primaryHover);
+        color: var(--PrimaryColor);
     }
     .header .menu .menuList .btn {
         margin-left: 1rem;

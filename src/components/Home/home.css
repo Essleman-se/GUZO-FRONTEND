@@ -11,7 +11,7 @@
     --bodyColor: rgb(240, 240, 246);
     --cardBG: rgb(225, 225, 235);
 }
-.home{
+.home {
     width: 100%;
     position: relative;
     display: flex;
@@ -19,16 +19,19 @@
     justify-content: center;
     margin: auto;
 }
-.home .overlay{
+.home .rides {
+    margin-top: 6rem;
+}
+.home .overlay {
     position: absolute;
     height: 100%;
     width: 100%;
     background: rgb(47, 106, 127);
+    mix-blend-mode: hard-light;
     top: 0;
     bottom: 0;
     z-index: 1;
-    mix-blend-mode: hard-light;
-}
+  }
 video{
     position: absolute;
     height: 100%;
@@ -253,6 +256,3 @@ video{
         font-size: 17px;
     }
 }
-
-
-

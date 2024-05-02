@@ -13,8 +13,8 @@ export const Home = () => {
 
     return (
       <section className="home">          
-         <div className="overlay"></div>
-         <video src={video} autoPlay loop muted type="video/mp4"></video>
+         {/* <div className="overlay"></div>
+         <video src={video} autoPlay loop muted type="video/mp4"></video> */}
         <div className="homeContent container">
             <div className="textDiv">
                 <span className="smallText">

@@ -67,10 +67,10 @@ export const RenderRoutes = () => {
                     } )}
      
                     { user.isAuthenticated ?
-                    <div className="menuItem"><Link to={'#'} className="menuLink" onClick={logout}>Log out</Link></div>
+                    <div className="menuItem"><Link to={'#'} className="menuLink" onClick={logout}>Logout</Link></div>
                     :
                     <>
-                    <div className="menuItem"><Link to={'login'} className="menuLink">Log in</Link></div>
+                    <div className="menuItem"><Link to={'login'} className="menuLink">Login</Link></div>
                     <div className="menuItem"><Link to={'register'} className="menuLink">Register</Link></div>
                     </> }
                     <button className="btn"> 

@@ -19,7 +19,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: auto;
+  margin: auto;  
 }
 .footer .videoDiv {
   position: absolute;
@@ -65,7 +65,7 @@
 .footer .secContent .contactDiv .text small {
   font-size: 13px;
   font-weight: 400;
-  color: var(--whiteColor);
+  color: var(--greyText);
 }
 .footer .secContent .contactDiv .text h2 {
   color: var(--whiteColor);
@@ -83,7 +83,7 @@
   border: 1px solid var(--whiteColor);
   outline: none;
   background: transparent;
-  color: var(--whiteColor);
+  color: red
 }
 .footer .secContent .contactDiv .inputDiv input::-moz-placeholder {
   color: var(--whiteColor);

@@ -17,9 +17,6 @@ export const Footer = () => {
    }, [])
   return (
     <section id='footer'className='footer'>
-      <div className="videoDiv">
-        <video src={video2} loop autoPlay muted type="video/mp4"></video>
-      </div>
      <div className="secContent container">
       <div className="contactDiv flex">
         <div data-aos="fade-up" data-aos-duration="2000" className="text">
@@ -150,8 +147,8 @@ export const Footer = () => {
          </div>
 
          <div className="footerDiv flex">
-           <small>BEST TRAVEL WEBSITE THEME</small>
-           <small>COPYRIGHTS RESERVED - ISRATECH 2022</small>
+           <small>ALLTRIPS TRAVEL WEBSITE</small>
+           <small>COPYRIGHTS RESERVED - ALLTRIPS 2022</small>
          </div>
        </div>
 

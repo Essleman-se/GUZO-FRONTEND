@@ -16,8 +16,7 @@ export const Login = () => {
      
      const doLogin = async () => {
 
-          try {
-               
+          try {               
                await login(formData.userName, formData.password) 
                navigate("/account")
 
@@ -50,7 +49,7 @@ export const Login = () => {
                                 value={formData.userName} onChange={(e) => setFormData({userName: e.target.value}) } 
                                 type="text"
                                 className={focused ? 'focused-user' : ''}
-                                />
+                         />
                     </div>
                     <div className="input">
                          <div className="icon-group">
@@ -61,7 +60,7 @@ export const Login = () => {
                                 value={formData.password} onChange={(e) => setFormData({password: e.target.value}) } 
                                 type="password"
                                 className={focused ? 'focused-pass' : ''}
-                                />
+                         />
                     </div>
                     <div className="forgot-password">
                        <small>Forgot Password?</small>
