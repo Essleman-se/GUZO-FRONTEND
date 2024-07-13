@@ -36,8 +36,7 @@ export const Login = () => {
      };
 
      return (
-          <div className="page">
-            <div className="div-bg"></div>               
+          <div className="login">                           
                <div className="inputs">
                   <div className="input-group">                     
                     <div className="input"> 

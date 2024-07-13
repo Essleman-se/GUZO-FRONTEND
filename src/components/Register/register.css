@@ -1,40 +1,102 @@
-:root{
-    --PrimaryColor: hsl(199, 100%, 33%);
-    --SecondaryColor: hsl(187, 85%, 43%);
-    --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
-    --whiteColor: hsl(0, 0%, 100%);
-    --blackColor: hsl(201, 33%, 16%);
-    --textColor: hsl(240, 4%, 36%);
-    --whiteColorDeam: hsl(0, 0%, 93%);
-    --greyText: rgb(190, 190, 190);
-    --inputColor: rgb(239, 239, 239);
-    --bodyColor: rgb(240, 240, 246);
-    --cardBG: rgb(225, 225, 235);
-}
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
-.regcontainer { 
-    display: flex;
-    align-items: normal;   
-    max-width: 1000px;
+
+.reg section {  
+    max-width: 800px;
     min-height: 400px;
-    display: flex;
+    display: flex;       
     flex-direction: column;
     justify-content: flex-start;
-    padding: 2rem;
+    padding: 6rem;
+    align-items: normal;
     margin: auto;
-    background-color: rgba(113, 104, 104, 0.4);    
+    background-color: rgba(232, 232, 238, 0.933);
 }
-.regcontainer .inputfiled {
-    max-height: 50px;
-    min-height: 20px;
-    font-size: small;
-}
-form {
-    display: flexbox;
+
+.reg form {
+    display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     flex-grow: 1;
-    padding-bottom: 1rem;
+    margin-top: auto;    
+}
+.reg form label {
+   line-height: 20px;
+   font-size: small;
+}
+.reg form .input {    
+   
+   font-size: small;
+ }
+
+.reg a, a:visited {
+    color: #fff;
 }
 
+.reg input[type="text"],
+.reg input[type="password"],
+.reg button,
+.reg textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 22px;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+}
 
+.reg label {
+  margin-top: 1rem;
+}
+
+.reg button {
+    margin-top: 1rem;
+    color: aliceblue;
+  }
+
+.reg button {
+  padding: 0.5rem;
+}
+
+.reg .instructions {
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    background: #000;
+    color: #fff;
+    padding: 0.25rem;
+    position: relative;
+    bottom: -10px;
+}
+
+.reg .instructions > svg {
+    margin-right: 0.25rem;
+}
+
+.reg .offscreen {
+    position: absolute;
+    left: -9999px;
+}
+
+.reg .hide {
+    display: none;
+}
+
+.reg .valid {
+    color: limegreen;
+    margin-left: 0.25rem;
+}
+
+.reg .invalid {
+    color: red;
+    margin-left: 0.25rem;
+}
+
+.reg .errmsg {
+    background-color: lightpink;
+    color: firebrick;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.reg .line {
+    display: inline-block;
+}

@@ -49,7 +49,7 @@ export const AuthWrapper = () => {
                          <RenderMenu />                       
                          <RenderRoutes />
                          {/* <Main />   */}
-                         <Footer />                      
+                         <Footer />
                     </>                    
                </AuthContext.Provider>               
           

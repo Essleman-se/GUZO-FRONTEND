@@ -17,7 +17,7 @@ axios.defaults.baseURL = 'http://localhost:7071';
 //axios.defaults.baseURL = 'http://18.118.152.251:7071';
 axios.defaults.headers.post['Content-Type'] = 'application/json';
 
-export const request = (method, url, data) => {
+export async function request(method, url, data){
 
     let headers = {};
     if (getAuthToken() !== null && getAuthToken() !== "null") {        

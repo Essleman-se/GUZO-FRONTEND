@@ -11,12 +11,14 @@
   --bodyColor: rgb(240, 240, 246);
   --cardBG: rgb(225, 225, 235);
 }
-.page {
-  width: 100%;
+.login {  
+  width: 800px;
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: normal;
+  padding-top: 8rem;
   justify-content: center;
+  background-color: rgb(247, 242, 242); 
   margin: auto;  
 }
 .div-bg{
@@ -28,15 +30,14 @@
   margin-top: -1rem; 
 }
 .inputs {
-  width: 300px;
-  height: 160px;
-  padding-top: 2rem;
-  align-items: center;
-  background-color: beige;  
-  margin-top: -1rem;    
+  width: 400px;
+  height: 250px;  
+  align-items: normal;
+  background-color: rgb(245, 220, 220);  
+    
 }
 .input-group {
-  margin-top: -30px;
+  
 }
 .icon-group {
   margin-left: -10px;
@@ -94,7 +95,7 @@ input.focused-pass {
   color: white;
   font-family: "Poppins";
   margin: 25px 10px;
-  height: 25px;
+  height: 40px;
   transition: 200ms background-color ease-in-out;
   display: flex;
 }
@@ -128,7 +129,7 @@ button {
 }
 
 @media screen and (max-width: 500px) {
-.page {
+.login {
   width: auto;
   height: 20rem;
   padding: 8rem 2rem 0rem;
@@ -140,7 +141,7 @@ button {
 }
 } 
 @media screen and (min-width: 840px) {
-.page {
+.login {
   width: 53rem;
   height: 20rem;
   padding: 9rem 0rem 1rem;
@@ -153,7 +154,7 @@ button {
 }
 }
 @media screen and (min-width: 940px) {
-.page {
+.login {
   width: 58rem;
   height: 20rem;
   padding: 9rem 0rem 1rem;
@@ -161,7 +162,7 @@ button {
 }
 }
 @media screen and (min-width: 1024px) {
-.page {
+.login {
   width: auto;
   height: 20rem;
   padding: 8rem 0rem 1rem;
