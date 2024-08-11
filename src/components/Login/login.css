@@ -12,7 +12,7 @@
   --cardBG: rgb(225, 225, 235);
 }
 .login {  
-  width: 800px;
+  width: 100%;
   position: relative;
   display: flex;
   align-items: normal;
@@ -29,12 +29,8 @@
   height: 160px;   
   margin-top: -1rem; 
 }
-.inputs {
-  width: 400px;
-  height: 250px;  
-  align-items: normal;
-  background-color: rgb(245, 220, 220);  
-    
+.inputs { 
+  background-color: rgb(242, 199, 199);  
 }
 .input-group {
   
@@ -92,7 +88,7 @@ input.focused-pass {
   border-radius: 5px;
   outline: none;
   background-color: rgb(56, 56, 56);
-  color: white;
+  color: rgb(235, 8, 8);
   font-family: "Poppins";
   margin: 25px 10px;
   height: 40px;
@@ -120,46 +116,78 @@ button {
   color: black;
 }
 @media screen and (min-width: 500px) {
-  .page {
+  .login {
     width: auto;
-    height: 20rem;
-    padding: 8rem 2rem 1rem;
+    height: 20rem;  
+    padding: 8rem 2rem 0rem;  
     justify-content: center;
-}
+  }
+  .inputs {
+    margin-top: -3rem;
+    padding-top: 2rem;
+    padding-left: 0rem;  
+    width: 450px;
+    height: 300px; 
+   }
+   .input {
+    height: 40px;
+   }
 }
 
 @media screen and (max-width: 500px) {
 .login {
   width: auto;
-  height: 20rem;
-  padding: 8rem 2rem 0rem;
+  height: 20rem;  
+  padding: 8rem 2rem 0rem;  
   justify-content: center;
 }
 .inputs {
+  margin-top: -3rem;
   padding-top: 2rem;
-  padding-left: 0rem;
-}
+  padding-left: 0rem;  
+  width: 400px;
+  height: 250px; 
+ }
 } 
 @media screen and (min-width: 840px) {
 .login {
-  width: 53rem;
+  width: auto;
   height: 20rem;
-  padding: 9rem 0rem 1rem;
-  margin-left: 1rem;    
+  padding: 8rem 2rem 0rem; 
   justify-content: center;
 }
-.inputs {
-  padding-top: 2rem;
+.inputs {  
+  padding-top: 3.5rem;
   padding-left: 0rem;
-}
+  width: 500px;
+  height: 350px;   
+ }
+ .input {
+  height: 50px;
+ }
+ .button {
+  height: 50px;
+ }
 }
 @media screen and (min-width: 940px) {
 .login {
-  width: 58rem;
+  width: auto;
   height: 20rem;
   padding: 9rem 0rem 1rem;
   margin-left: 2rem; 
-}
+ }
+ .inputs {  
+  padding-top: 4rem;
+  padding-left: 0rem;
+  width: 550px;
+  height: 400px;   
+ }
+ .input {
+  height: 55px;
+ }
+ .button {
+  height: 55px;
+ }
 }
 @media screen and (min-width: 1024px) {
 .login {
@@ -168,5 +196,18 @@ button {
   padding: 8rem 0rem 1rem;
   margin-left: 7rem; 
   margin-right: 7rem;
-}
+ }
+ .inputs {  
+  padding-top: 4rem;
+  padding-left: .3rem;
+  width: 600px;
+  height: 400px;   
+ }
+ .input {
+  height: 60px;
+  width: 565px;
+ }
+ .button {
+  height: 60px;
+ }
 }

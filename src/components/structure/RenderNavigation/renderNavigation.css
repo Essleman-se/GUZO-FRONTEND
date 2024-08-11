@@ -1,4 +1,4 @@
-:root{
+:root {
     --PrimaryColor: hsl(199, 100%, 33%);
     --SecondaryColor: hsl(187, 85%, 43%);
     --gradientColor: linear-gradient(to right, hsl(187, 85%, 43%),hsl(199, 100%, 33%));
@@ -16,11 +16,14 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: var(--whiteColorDeam);
+    background: var(--SecondaryColor);
     width: 100%;
     padding: 1rem;
     z-index: 1000;
 }
+/* .header .menu .menuList .menuItem .menuLink{
+    margin-left: 0rem;
+} */
 .header .logo{
     color: var(--blackColor);
     font-weight: 600;
@@ -29,11 +32,29 @@
     justify-content: center;
 }
 .header .logo .icon{
-    font-size: 25px;
+    font-size: 30px;
     color: var(--PrimaryColor);
     transform: translate(-5px);
 }
 @media screen and (max-width: 768px) {
+    .header {       
+        height: 10%;
+    }
+    .header .logoDiv{
+        position: fixed;       
+        background-color: var(--SecondaryColor);
+        left: .5rem;        
+    }
+    .header .logoDiv .logo{
+        font-size: 10px;        
+    }
+    .header .logoDiv .logo .icon{
+        font-size: 25px;
+        padding-top: .5rem;
+        padding-left: .5rem;
+        color: var(--PrimaryColor);
+        transform: translate(-5px);
+    }
     .header .menu{
         position: absolute;
         background: var(--whiteColor);
@@ -45,7 +66,7 @@
         padding: 1rem;
         transform: translate(-50%);
         z-index: 2000;
-        box-shadow: 0 2px 4px rgba(2, 15, 29, 0.904);
+        box-shadow: 0 2px 5px rgba(2, 15, 29, 0.796);
         transition: .1s ease-in-out;
     }
     .header .menu .menuList{
@@ -56,14 +77,14 @@
         padding: .5rem 0;  
     }
     .header .menu .menuList .menuItem{
-        padding: .5rem 0;
+        padding: .5rem .5;
     }
     .header .menu .menuList .menuItem .menuLink{
         color: var(--textColor);
         font-size: .9rem;
-        font-weight: 600;
+        font-weight: 500;
         &:hover{
-            color: var(--PrimaryColor);
+            color: var(--SecondaryColor);
         }
     }
     .header .menu .menuList .btn{
@@ -83,6 +104,9 @@
         }
     }
     .header .toggleMenubar .icon{
+        position: absolute;
+        right: .5rem;
+        top: 1rem;
         font-size: 25px;
         color: var(--PrimaryColor);
     }
@@ -97,24 +121,32 @@
 }
 .header .toggleMenubar .icon {
     font-size: 25px;
-    color: var(--SecondaryColor);
+    color: var(--blackColor);
 }
 .header .toggleMenubar:hover .icon {    
-    color: var(--SecondaryColor);
+    color: var(--whiteColor);
 }
 @media screen and (min-width: 769px) {
     .toggleMenubar, .closeMenubar {
         display: none;
     }
     .header {
-        padding: 1.5rem 2rem;
+       height: 10%;
+    }
+    .header .logoDiv{
+        position: fixed;       
+        background-color: var(--SecondaryColor);
+        left: 1.5rem;        
+    }
+    .header .logoDiv .logo{
+        font-size: 15px;        
     }
     .header .menu {
-        position: absolute;
-        margin-left: 200px;
+        position: absolute;       
+        right: 1rem;
     }
     .header .logoDiv {              
-        margin-left: -3px;      
+        margin-left: -20px;      
     }
     .header .menu .menuList {
         display: flex;
@@ -124,7 +156,7 @@
     }
     .header .menu .menuList .menuItem .menuLink {
         color: var(--textColor);
-        padding: 0 0.45rem;
+        padding: 0 0.40rem;
         font-size: 0.9rem;
         font-weight: 500;
     }
@@ -143,13 +175,61 @@
     }
 }
 @media screen and (min-width: 960px) {
-    .header .menu .menuList .menuItem {
-      padding: 0 0.7rem;
+    .header {
+        height: 10%
     }
+    .header .logoDiv{
+        position: fixed;       
+        background-color: var(--SecondaryColor);
+        left: 1.5rem;        
+    }
+    .header .logoDiv .logo{
+        font-size: 15px;        
+    }
+    .header .logoDiv .logo .icon {
+        font-size: 35px;
+        color: var(--PrimaryColor);
+    }
+    .header .menu{
+        position: absolute;       
+        right: 1rem;
+    }
+    .header .menu .menuList{    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row; 
+    }
+    .header .menu .menuList .menuItem {
+      padding: 1 0.7rem;
+    }
+
+    .header .menu .menuList .menuItem .menuLink {                     
+        gap: 1rem;
+    }    
 }
 @media screen and (min-width: 1024px) {
-    .header {
-      padding: 1rem 8.5rem;
+    .header {        
+        height: 10%;               
+    }
+    .header .logoDiv{
+        position: fixed;       
+        background-color: var(--SecondaryColor);
+        left: 1.5rem;        
+    }
+    .header .logoDiv .logo{
+        font-size: 20px;        
+    }
+    .header .logoDiv .logo .icon {
+        font-size: 40px;
+        color: var(--PrimaryColor);
+    }
+    .header .menu {
+        position: absolute;       
+        right: 1rem;
+    }
+    .header .menu .menuList{
+        
     }
 }
 

@@ -18,16 +18,6 @@ export const Footer = () => {
   return (
     <section id='footer'className='footer'>
      <div className="secContent container">
-      <div className="contactDiv flex">
-        <div data-aos="fade-up" data-aos-duration="2000" className="text">
-          <small>KEEP IN TOUCH</small>
-          <h2>Travel with us</h2>
-        </div>
-        <div className="inputDiv flex">
-          <input data-aos="fade-up" data-aos-duration="2000" type="text" placeholder='Enter Email Address' />
-          <button data-aos="fade-up" data-aos-duration="3000" className='btn flex'  type='submit'>SEND  <FiSend className="icon"/></button>
-        </div>
-      </div>
        
        <div className="footerCard flex">
          <div className="footerIntro flex">

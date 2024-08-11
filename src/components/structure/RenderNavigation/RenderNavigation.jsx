@@ -47,12 +47,15 @@ export const RenderRoutes = () => {
         return (
           <header className="header flex">
                <div className="logoDiv">
-                    <a href="#" className="logo flex">
+                    <a href="#" className="logo">
                          <h1><MdOutlineTravelExplore className='icon' />Travel</h1>
                     </a>
                </div>
+               {/* <div className="adjuster">
+                    <p>Here GO</p>
+               </div> */}
                <div className={active}>
-                 <div className="menuList flex">
+                 <div className="menuList">
                     { nav.map((r, i) => {
      
                          if (!r.isPrivate && r.isMenu) {
@@ -67,15 +70,13 @@ export const RenderRoutes = () => {
                     } )}
      
                     { user.isAuthenticated ?
-                    <div className="menuItem"><Link to={'#'} className="menuLink" onClick={logout}>Logout</Link></div>
+                    <div className="menuItem"><Link to={'#'} className="menuLink" onClick={logout}>LOGOUT</Link></div>
                     :
                     <>
-                    <div className="menuItem"><Link to={'login'} className="menuLink">Login</Link></div>
-                    <div className="menuItem"><Link to={'register'} className="menuLink">Register</Link></div>
+                    <div className="menuItem"><Link to={'login'} className="menuLink">LOGIN</Link></div>
+                    <div className="menuItem"><Link to={'register'} className="menuLink">REGISTER</Link></div>
                     </> }
-                    <button className="btn"> 
-                      <a href="#">BOOK NOW</a>
-                    </button>
+
                 </div>
                     <div onClick={removeMenu} className="closeMenubar">
                       <AiFillCloseCircle className='icon'/>

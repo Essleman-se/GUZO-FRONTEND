@@ -43,14 +43,15 @@ video{
 .home .homeContent {
     width: 100;
     height: max-content;
-    padding: 8rem 1.5rem 3rem;
+    padding: 7rem 1rem 3rem;
     display: flex;
     row-gap: 3rem;
+    background-color: aqua;
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
     margin: auto;
-    color: var(--whiteColor);
+    color: var(--SecondaryColor);
     z-index: 100;    
 }
 .home .homeContent .textDiv {
