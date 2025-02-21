@@ -71,7 +71,7 @@ export const Register = () => {
     const registerOrUpdateUser = async(e) => {
         e.preventDefault();        
         
-        
+        debugger
         // if button enabled with JS hack
         const v1 = NAME_REGEX.test(firstName);
         const v2 = PWD_REGEX.test(password);
@@ -128,7 +128,7 @@ export const Register = () => {
                 <section>
                     <h1>Success!</h1>
                     <p>
-                        <a href="#">Sign In</a>
+                        <a href="/login">Sign In</a>
                     </p>
                 </section>
             ) : (
@@ -145,7 +145,7 @@ export const Register = () => {
                         <input className='input'
                             type="text"
                             id="firstName"
-                            ref={userRef}
+                            ref={userRef}//Automaticall focuses on the input field when the component mounts
                             autoComplete="off"
                             onChange={(e) => setFirstName(e.target.value)}
                             value={firstName}
@@ -169,7 +169,7 @@ export const Register = () => {
                         <input className='input'
                             type="text"
                             id="lastName"
-                            ref={userRef}
+                            // ref={userRef}
                             autoComplete="off"
                             onChange={(e) => setLastName(e.target.value)}
                             value={lastName}
@@ -192,7 +192,7 @@ export const Register = () => {
                         <input className='input'
                             type="text"
                             id="email"
-                            ref={userRef}
+                            // ref={userRef}
                             autoComplete="off"
                             onChange={(e) => setEmail(e.target.value)}
                             value={email}
@@ -255,13 +255,14 @@ export const Register = () => {
                             required
                         />
 
+                        {/* <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button> */}
                         <button disabled={!validName || !validPwd || !validMatch ? true : false}>Sign Up</button>
                     </form>
                     <p>
-                        Already registered?<br />
+                        Already registered?  
                         <span className="line">
                             {/*put router link here*/}
-                            <a href="#">Sign In</a>
+                            <a href="/login">Sign In</a>
                         </span>
                     </p>
                 </section>

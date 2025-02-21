@@ -103,12 +103,13 @@ button {
   color: var(--whiteColor);  
 }
 .register-text {
+  color: blueviolet;
   font-size: 10px;    
   text-align: center;
   margin-top: -15px;  
 }
 .register-text span {
-  color: grey;
+  color: rgb(98, 2, 2);
   text-decoration: underline;  
 }
 .register-text span:hover {

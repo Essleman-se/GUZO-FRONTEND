@@ -213,7 +213,8 @@
         height: 10%;               
     }
     .header .logoDiv{
-        position: fixed;       
+        position: fixed;
+        height: 2rem;       
         background-color: var(--SecondaryColor);
         left: 1.5rem;        
     }
