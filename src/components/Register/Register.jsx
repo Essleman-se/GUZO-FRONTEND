@@ -58,11 +58,13 @@ export const Register = () => {
         setValidName(NAME_REGEX.test(firstName));
         setValidLname(NAME_REGEX.test(lastName));
     }, [firstName, lastName])
+    
 
     useEffect(() => {
         setValidPwd(PWD_REGEX.test(password));
         setValidMatch(password === matchPwd);
     }, [password, matchPwd])
+    
 
     useEffect(() => {
         setErrMsg('');
@@ -163,8 +165,8 @@ export const Register = () => {
                         </p>
                         <label htmlFor="lastName">
                             Last Name:
-                            <FontAwesomeIcon icon={faCheck} className={validName ? "valid" : "hide"} />
-                            <FontAwesomeIcon icon={faTimes} className={validName || !lastName ? "hide" : "invalid"} />
+                            <FontAwesomeIcon icon={faCheck} className={validLname ? "valid" : "hide"} />
+                            <FontAwesomeIcon icon={faTimes} className={validLname || !lastName ? "hide" : "invalid"} />
                         </label>
                         <input className='input'
                             type="text"
